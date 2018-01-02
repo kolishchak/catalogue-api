@@ -53,10 +53,10 @@ this command to create and migrate the database:
 
 ```sh
 # This creates a database
-$ rake db:create
+$ rails db:create
 
 # This creates tables etc. on the database
-$ rake db:migrate
+$ rails db:migrate
 ```
 
 ### 3.3 Database Seed
@@ -65,7 +65,7 @@ Some of the database tables need to filled by initial data.
 
 ```sh
 # This fills up the tables
-$ rake db:seed
+$ rails db:seed
 ```
 
 ## 4. Server
