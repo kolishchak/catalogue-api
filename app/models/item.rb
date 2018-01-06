@@ -3,4 +3,7 @@ class Item < ApplicationRecord
 
   include Slugged
   include Validations
+
+  scope :by_category, ->(category_slug) { joins(:category).where(categories: {slug: category_slug}) }
+  
 end
