@@ -6,7 +6,7 @@ class ItemsController < ApplicationController
   end
 
   def count
-    @count = {count: Item.by_category(params[:category_slug]).count()}
+    @count = Item.calculate(params[:category_slug])
     render json: @count
   end
 
@@ -16,3 +16,4 @@ class ItemsController < ApplicationController
   end
 
 end
+
